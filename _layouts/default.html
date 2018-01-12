@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
   <head>
     <meta charset="utf-8">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 
     <!-- Redirect =============== -->
-    <meta http-equiv="refresh" content="1; url=https://openopps.usajobs.gov">
+    <meta http-equiv="refresh" content="1; url={{ site.destination | escape }}">
     <script type="text/javascript">
-      window.location.href = "https://openopps.usajobs.gov"
+      window.location.href = "{{ site.destination | escape }}"
     </script>
 
   </head>
 
-
   <body>
-
-    Open Opportunities has moved to <a href="https://openopps.usajobs.gov" title="Open Opportunities">https://openopps.usajobs.gov</a>.
-
+    {{ site.title | escape }} has moved to <a href="{{ site.destination | escape }}" title="{{ site.title | escape }}">{{ site.destination | escape }}</a>.
   </body>
+
 </html>
