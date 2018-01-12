@@ -1,4 +1,4 @@
-# Redirect — Open Opportunities
+# Redirect
 
 This site is a temporary redirect template, built in Jekyll.
 

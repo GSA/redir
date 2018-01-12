@@ -1,6 +1,5 @@
-# Redirect — Open Opportunities
+# Redirect
 
-Open Opportunities has moved from `openopps.digitalgov.gov` to `openopps.usajobs.gov`.
-This site is a temporary redirect for the site till OPM gets a 301 redirect in place.
+This site is a temporary redirect template, built in Jekyll.
 
 Questions: jeremy.zilar@gsa.gov

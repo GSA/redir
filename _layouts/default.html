@@ -7,15 +7,15 @@
     <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 
     <!-- Redirect =============== -->
-    <meta http-equiv="refresh" content="1; url={{ site.destination | escape }}">
+    <meta http-equiv="refresh" content="1; url={{ site.new_url | escape }}">
     <script type="text/javascript">
-      window.location.href = "{{ site.destination | escape }}"
+      window.location.href = "{{ site.new_url | escape }}"
     </script>
 
   </head>
 
   <body>
-    {{ site.title | escape }} has moved to <a href="{{ site.destination | escape }}" title="{{ site.title | escape }}">{{ site.destination | escape }}</a>.
+    {{ site.title | escape }} has moved to <a href="{{ site.new_url | escape }}" title="{{ site.title | escape }}">{{ site.new_url | escape }}</a>.
   </body>
 
 </html>
